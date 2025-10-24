@@ -9,12 +9,6 @@
 }
 
 /* Dark mode (manual toggle with .dark) */
-html.dark {
-  --background: #0f172a; /* deep navy-slate */
-  --foreground: #f8fafc; /* soft white */
-  --button-bg: #f8fafc; /* light button in dark mode */
-  --button-text: #0f172a; /* dark text */
-}
 
 /* Tailwind theme bindings */
 @theme inline {
@@ -22,14 +16,6 @@ html.dark {
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-/* Dark mode (system preference) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a;
-    --foreground: #f8fafc;
-  }
 }
 
 /* Base styles */
